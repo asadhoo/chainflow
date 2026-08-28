@@ -5,16 +5,13 @@ import os
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "chainflow.db")
 BACKUP_DIR = os.path.join(BASE_DIR, "backups")
-
-# Supabase Configuration
-SUPABASE_URL = "https://wyiwjulhvydjdxnabgxn.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5aXdqdWxodnlkamR4bmFiZ3huIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc3NzY3MTksImV4cCI6MjEwMzM1MjcxOX0.H6YHQZjchaNR_tX8WDaLdqc5vIMuEZmIP2cBZ6orSNo"
 
 # App Info
 APP_NAME = "JPL Supply Chain"
 APP_VERSION = "2.0.0"
-COMPANY_NAME = "JPL — Jasmine Pesticide Limited"
+COMPANY_NAME = "JPL — Jullundur Pvt Ltd"
 
 # Roles
 ROLES = {
@@ -49,7 +46,7 @@ JPL_LOGO_B64 = """iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAIAAAD6XpeDAAAQAElEQVR4Aey8B4
 
 # Default Settings
 DEFAULT_SETTINGS = {
-    "company_name": "My Pesticide Company",
+    "company_name": "Jullundur Pvt Ltd",
     "high_pending_threshold": "70",     # % pending triggers alert
     "low_stock_alert": "true",
     "currency": "PKR",
