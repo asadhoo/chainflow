@@ -1,0 +1,184 @@
+/* ChainFlow — Professional Supply Chain Dashboard Styling */
+
+/* Global */
+.main .block-container {
+    padding-top: 1.5rem;
+    max-width: 1200px;
+}
+
+/* KPI Cards */
+.kpi-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 12px;
+    padding: 1.2rem 1rem;
+    border-left: 4px solid #2E7D32;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: transform 0.2s;
+}
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.kpi-card h3 {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+.kpi-card h2 {
+    font-size: 1.6rem;
+    color: #1A1A2E;
+    margin: 0;
+    font-weight: 700;
+}
+.kpi-card.red { border-left-color: #C62828; }
+.kpi-card.yellow { border-left-color: #F9A825; }
+.kpi-card.blue { border-left-color: #1565C0; }
+.kpi-card.green { border-left-color: #2E7D32; }
+.kpi-card.orange { border-left-color: #E65100; }
+
+/* Alert boxes */
+.alert-box {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    border-left: 4px solid;
+}
+.alert-box.critical {
+    background: #FFEBEE;
+    border-left-color: #C62828;
+    color: #B71C1C;
+}
+.alert-box.warning {
+    background: #FFF8E1;
+    border-left-color: #F9A825;
+    color: #E65100;
+}
+.alert-box.info {
+    background: #E3F2FD;
+    border-left-color: #1565C0;
+    color: #0D47A1;
+}
+.alert-box.success {
+    background: #E8F5E9;
+    border-left-color: #2E7D32;
+    color: #1B5E20;
+}
+
+/* Status badges */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.badge-green { background: #E8F5E9; color: #2E7D32; }
+.badge-yellow { background: #FFF8E1; color: #E65100; }
+.badge-red { background: #FFEBEE; color: #C62828; }
+.badge-blue { background: #E3F2FD; color: #1565C0; }
+.badge-grey { background: #F5F5F5; color: #757575; }
+
+/* Page header */
+.page-header {
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #E8F5E9;
+}
+.page-header h1 {
+    color: #1A1A2E;
+    font-size: 1.8rem;
+}
+.page-header p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Data tables */
+.dataframe {
+    font-size: 0.88rem !important;
+}
+
+/* Sidebar branding */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1A1A2E 0%, #16213E 100%);
+}
+[data-testid="stSidebar"] * {
+    color: #E0E0E0 !important;
+}
+[data-testid="stSidebar"] .stSelectbox label,
+[data-testid="stSidebar"] .stRadio label {
+    color: #B0BEC5 !important;
+    font-size: 0.85rem;
+}
+
+/* Section dividers */
+.section-divider {
+    border-top: 1px solid #E0E0E0;
+    margin: 1.5rem 0;
+}
+
+/* ── Sidebar user info box ── */
+.sidebar-user-box {
+    text-align: center;
+    padding: 0.6rem 0.5rem 1rem 0.5rem;
+}
+.sidebar-user-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin: 0 0 0.2rem 0;
+    color: #E0E0E0 !important;
+}
+.sidebar-user-role {
+    font-size: 0.78rem;
+    color: #90CAF9 !important;
+    margin: 0 0 0.15rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.sidebar-user-wh {
+    font-size: 0.8rem;
+    color: #B0BEC5 !important;
+    margin: 0;
+}
+
+/* ── Login Page ── */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.login-card {
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin: 0 auto 1rem auto;
+}
+.login-logo {
+    width: 90px;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+.login-title {
+    color: #1A1A2E;
+    font-size: 1.7rem;
+    margin: 0 0 0.2rem 0;
+    font-weight: 700;
+}
+.login-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.login-footer {
+    text-align: center;
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
